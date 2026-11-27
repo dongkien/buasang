@@ -58,6 +58,15 @@ input{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px
 .out b{color:var(--navy)}
 footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:14px}
 a{color:var(--navy)}
+.myths{padding:0;margin:14px 0;list-style:none;counter-reset:hl;display:grid;gap:10px}
+.myths li{counter-increment:hl;position:relative;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:8px;padding:12px 14px 12px 46px;font-size:15px}
+.myths li::before{content:counter(hl);position:absolute;left:14px;top:12px;font-weight:700;color:var(--red)}
+.myths b{display:block;color:var(--navy);font-size:16px;margin-bottom:2px}
+.myths .ch{display:block;margin-top:6px}
+.files{padding-left:20px}
+.files li{margin:8px 0}
+@media (max-width:720px){table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:14px}td,th{min-width:7em}}
+body{overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -75,6 +84,8 @@ a{color:var(--navy)}
   <a href="#nha">Nhà ở</a>
   <a href="#phepdo">Phép đo của tác giả</a>
   <a href="#khac">Số khác</a>
+  <a href="#hieulam">Hiểu lầm thường gặp</a>
+  <a href="#tailieu">Tài liệu tải về</a>
   <a href="#may-tinh">Máy tính nhỏ</a>
 </div></nav>
 
@@ -224,6 +235,526 @@ a{color:var(--navy)}
     </table>
   </section>
 
+  <section id="theochuong">
+    <h2>Số liệu theo chương</h2>
+    <p class="note">Bản in rút gọn viết những con số đổi nhanh bằng lời cho khỏi cũ; số đầy đủ và nguồn nằm ở bảng dưới, xếp theo chương.</p>
+    <table>
+      <tr><th>Chương</th><th>Số</th><th>Ý nghĩa</th><th>Nguồn</th></tr>
+      <tr><td>3</td><td>7,2%; vùng I 5,31 triệu đồng/tháng; vùng IV 3,7 triệu đồng/tháng (vùng II 4,73 triệu, vùng III 4,14 triệu ở chú thích)</td><td>Lương tối thiểu vùng từ 1/1/2026</td><td>Nghị định 293/2025/NĐ-CP</td></tr>
+      <tr><td>3</td><td>1,8 triệu, 3,8 triệu; 5-15 triệu, 25 triệu vé VIP</td><td>Giá ba hạng vé rẻ nhất và giá rao giấy mời BlackPink (7/2023)</td><td>VnExpress 7/7/2023</td></tr>
+      <tr><td>3</td><td>85.000-89.000 đồng/kg; ngày 12/6/2020</td><td>Giá lợn hơi giữa tháng 6/2020; ngày cho nhập lợn sống Thái Lan</td><td>VOH 18/6/2020</td></tr>
+      <tr><td>5</td><td>1/7/2026 đến 31/12/2026; Khu vực 1 và 2 phường Hoàn Kiếm; năm 2027 thêm phường Cửa Nam; từ 1/1/2028 toàn vành đai 1</td><td>Lộ trình vùng phát thải thấp, không cho xe máy chạy xăng dầu vào vành đai 1 Hà Nội.</td><td>Chỉ thị 20/CT-TTg (12/7/2025); Đề án vùng phát thải thấp trong vành đai 1, HĐND Hà Nội thông qua 15/6/2026; Nhân Dân 28/7/2025 và 15/6/2026</td></tr>
+      <tr><td>6</td><td>11,8 triệu và 2,1 triệu đồng/người/tháng; gấp 5,6 lần</td><td>Thu nhập bình quân nhóm 20% cao nhất so với nhóm 20% thấp nhất, năm 2025.</td><td>Cục Thống kê, Thông cáo Khảo sát mức sống dân cư 2025 (3/7/2026)</td></tr>
+      <tr><td>6</td><td>4.970 USD (2025), 4.490 USD (2024)</td><td>GNI bình quân đầu người của Việt Nam theo phương pháp Atlas.</td><td>World Bank Data Blog 1/7/2026; Báo Chính phủ (bản tiếng Anh) 2/7/2026</td></tr>
+      <tr><td>6</td><td>4.636 đến 14.375 USD; hiệu lực 1/7/2026 đến 30/6/2027</td><td>Ngưỡng GNI bình quân của nhóm thu nhập trung bình cao, năm tài khóa 2027</td><td>World Bank Data Help Desk, &quot;World Bank Country and Lending Groups&quot;</td></tr>
+      <tr><td>7</td><td>Lãi suất tái cấp vốn 4,5%/năm từ 19/6/2023, giữ nguyên ít nhất đến 10/2026</td><td>Mức lãi suất điều hành hiện hành</td><td>24hMoney 14/10/2026; CafeLand 4/8/2026</td></tr>
+      <tr><td>7</td><td>Gần 20 tỷ USD (đến 9/2022, ước tính của ACBS)</td><td>Đô la Ngân hàng Nhà nước bán ra giữ tỷ giá năm 2022</td><td>VietTimes 25/9/2022</td></tr>
+      <tr><td>7</td><td>Khoảng 700.000 tỷ đồng</td><td>Trái phiếu doanh nghiệp đến hạn 2023-2024</td><td>Thị trường Tài chính Tiền tệ 22/2/2023</td></tr>
+      <tr><td>7</td><td>Giảm khoảng 57% (255.163 tỷ đồng, 454 đợt); Nghị định 65 (16/9/2022)</td><td>Trái phiếu doanh nghiệp phát hành năm 2022 và quy định siết</td><td>VCBS</td></tr>
+      <tr><td>7</td><td>Nghị định 08/2023 (5/3/2023): giãn kỳ hạn tối đa 2 năm</td><td>Biện pháp gỡ thị trường trái phiếu</td><td></td></tr>
+      <tr><td>7</td><td>10,8% (cuối 1982); sản lượng Mỹ giảm khoảng 1/4 trong 1929-1933</td><td>Thất nghiệp Mỹ thời Volcker; Đại khủng hoảng</td><td></td></tr>
+      <tr><td>8</td><td>Gần 14.000 tỷ đồng sau 11 đợt chi trả, đến 2/11/2026; dư nợ còn hơn 30.081 tỷ</td><td>Tiền đã trả lại cho trái chủ nhóm Vạn Thịnh Phát</td><td>CafeF 2/11/2026; SGGP 21/4/2025</td></tr>
+      <tr><td>9</td><td>22,4 triệu đồng/lượng; SJC 128,5/133,5 triệu; thế giới 3.546 USD/ounce (khoảng 111,1 triệu)</td><td>Khoảng chênh vàng SJC với giá thế giới quy đổi, 9 giờ sáng 25/11/2026</td><td>Tiền Phong 25/11/2026</td></tr>
+      <tr><td>9</td><td>Nghị định 232/2025 (hiệu lực 10/10/2025); 11 hồ sơ xin sản xuất vàng miếng (14/4/2026); Nghị định 390/2026 (16/10/2026); đến 25/11/2026 chưa thấy giấy phép nào công bố</td><td>Tiến độ bỏ độc quyền vàng miếng</td><td></td></tr>
+      <tr><td>9</td><td>191,3 triệu (29/1/2026), 133,5 triệu (22/11/2026), giảm gần 58 triệu</td><td>Đỉnh và giá vàng SJC cuối 11/2026</td><td>Dân trí 23/11/2026</td></tr>
+      <tr><td>9</td><td>5,4%-6,8% (12 tháng, bốn ngân hàng lớn), cao nhất 7%; CPI tháng 10/2026 +5,09%</td><td>Lãi tiết kiệm và lạm phát cuối 2026, cho phép trừ lạm phát</td><td>VietnamPlus 10/11/2026; Cục Thống kê</td></tr>
+      <tr><td>9</td><td>254,8 triệu đồng</td><td>Hộp 14 chỉ nếu bán ngay sáng vía 26/2/2026</td><td>Tác giả tính</td></tr>
+      <tr><td>9</td><td>Giá SJC sáng vía và hôm trước: 2023 (67,7 so với 68,2), 2024 (78,4 so với 78,6), 2025 (90,0 so với 91,2), 2026 (185,0 so với 185,3) triệu đồng/lượng, giá bán; khoảng chênh mua bán sáng vía rộng hơn hôm trước vài trăm nghìn/lượng (2023-2025), 3 triệu năm 2026</td><td>Giá ngày vía không đắt hơn ngày thường</td><td>webgia.com, VOH, Thị trường Tài chính Tiền tệ</td></tr>
+      <tr><td>9</td><td>210.000 đồng mỗi món; món ép vỉ 0,3 chỉ ở Đà Nẵng 99,5 triệu/lượng so với SJC 88,8 triệu</td><td>Tiền công vàng vía năm 2026; giá quy đổi hàng ép vỉ đầu 2025</td><td>Tiền Phong 25/2/2026; Người Quan Sát 3/2/2025</td></tr>
+      <tr><td>9</td><td>49,1 triệu (23/8/2011) và 35,1 triệu (cuối 2013)</td><td>Vàng SJC mua ở đỉnh 2011 rồi bán lại</td><td>VnExpress 23 và 24/8/2011; VnEconomy 25/12/2013</td></tr>
+      <tr><td>9</td><td>200-300 tấn; khoảng 500 tấn; 23-57 tỷ USD</td><td>Ước tính vàng trong dân</td><td>Tuổi Trẻ 13/5/2016; VnExpress 1/5/2013</td></tr>
+      <tr><td>10</td><td>EVN lỗ năm 2023 hơn 34.000 tỷ; giá thành 2.032 đồng/kWh, giá bán 1.883 đồng (2022)</td><td></td><td>Bộ Công Thương 31/3/2023, 10/10/2024</td></tr>
+      <tr><td>10</td><td>Cá chết ở Lộc Vĩnh 14-18/4/2016, Lăng Cô gần 21 km, cá nặng tới 50 kg; ít nhất 100 tấn cá chết ở 4 tỉnh</td><td></td><td>VnExpress 20/4/2016; Thanh Niên News 6/5/2016</td></tr>
+      <tr><td>11</td><td>Chiều 10/10/2022: 121/550 cây xăng TP.HCM hết xăng</td><td></td><td>VOH 10/10/2022</td></tr>
+      <tr><td>11</td><td>Chi phí vận chuyển tính thêm ngày 11/10/2022; họp báo 12/10; Nghi Sơn 55% rồi 50% công suất</td><td></td><td>VnEconomy 12/10/2022</td></tr>
+      <tr><td>12</td><td>Thuế VAT giảm 10% xuống 8%, gia hạn đến hết 31/12/2026; đến 25/11/2026 chưa có văn bản gia hạn sang 2027</td><td></td><td>NQ 204/2025/QH15, NĐ 174/2025; LuatVietnam 27/6/2025; Thời báo Ngân hàng 25/11/2026</td></tr>
+      <tr><td>12</td><td>Thuế xăng 2026: ngân sách hụt thu khoảng 7.200 tỷ đồng/tháng; RON95-III tối đa 24.332 đồng/lít, giảm 5.625 đồng (kỳ 26/3/2026); NQ 19/2026/QH16 (16/4-30/6), NQ 34/2026/NQ-CP, NQ 43/2026/NQ-CP (BVMT và VAT đến hết 31/12/2026), NQ 45/2026/NQ-CP (TTĐB xăng 0% từ 1/11/2026 đến hết 31/3/2027)</td><td></td><td>QĐ 482/QĐ-TTg; Bộ Công Thương 26-27/3/2026; Sở Tư pháp Tuyên Quang 11/6/2026</td></tr>
+      <tr><td>12</td><td>Mô hình WHO: khoảng 2,1 triệu người bỏ hoặc không bắt đầu hút đến 2031, khoảng 700.000 ca tử vong sớm tránh được, thu thêm khoảng 24.000 tỷ/năm vào 2031</td><td></td><td>WHO WPRO 26/9/2025</td></tr>
+      <tr><td>12</td><td>Thuế TTĐB nước ngọt có đường: 8% năm 2027, 10% từ 2028 (ngưỡng trên 5 g/100 ml)</td><td></td><td>Luật 66/2025/QH15; NĐ 360/2025</td></tr>
+      <tr><td>12</td><td>Giảm trừ gia cảnh 15,5 triệu (bản thân), 6,2 triệu (người phụ thuộc) từ 2026; biểu thuế TNCN 5 bậc 5-35%</td><td></td><td>NQ 110/2025/UBTVQH15; Luật 109/2025/QH15</td></tr>
+      <tr><td>12</td><td>Sàn thương mại điện tử khấu trừ 1% VAT và 0,5% TNCN trên từng đơn (từ 1/7/2025; NĐ 252/2026 từ 1/7/2026)</td><td></td><td>NĐ 117/2025, NĐ 252/2026, NĐ 253/2026</td></tr>
+      <tr><td>12</td><td>Phép đo của tác giả trên KSMS 2024: nhóm 20% nghèo nhất nhận 7,1% lợi ích (khoảng 105 nghìn đồng/người/năm), nhóm giàu nhất 39,4% (khoảng 584 nghìn); thành thị 38% dân số nhận 51%; chia đều thì mỗi người khoảng 296 nghìn</td><td></td><td>Tác giả tính, chú thích th-vhlss</td></tr>
+      <tr><td>12</td><td>Thuế khoán bình quân 670.000 đồng/tháng, hộ kê khai 4,6 triệu (tháng 3/2025)</td><td></td><td>VietnamPlus 4/6/2025</td></tr>
+      <tr><td>13</td><td>Tàu cá bị nước ngoài bắt: 65 (2023), 58 (2024), 35 (2025), 13 (9 tháng 2026)</td><td></td><td>Báo Chính phủ, Báo Đấu thầu 13/10/2026</td></tr>
+      <tr><td>13</td><td>Đợt thanh tra thứ năm: 38 khuyến nghị, đến 30/9/2026 xong 31, 5 đang làm, 2 còn trao đổi; &quot;5 không&quot; của Phó Thủ tướng (10/2026)</td><td></td><td>Báo Chính phủ 13/10/2026; VTV 19/3/2026</td></tr>
+      <tr><td>13</td><td>Châu Âu chỉ mua khoảng 8% giá trị hải sản khai thác xuất khẩu (272 triệu USD, 9 tháng 2022)</td><td></td><td>VnEconomy 1/11/2022 (VASEP)</td></tr>
+      <tr><td>13</td><td>Tình trạng thẻ vàng: chính văn rút gọn nay ghi &quot;đến cuối năm 2026 vẫn chưa gỡ&quot;, bỏ câu &quot;tình hình mới nhất ở trang web&quot; (bản đầy đủ giữ câu ấy)</td><td></td><td>Báo Tuyên Quang 2/11/2026</td></tr>
+      <tr><td>13</td><td>Thị trường carbon: EU từ 2005; Việt Nam thí điểm 2025-2028, chính thức từ 2029; hạn ngạch thí điểm cho 110 cơ sở</td><td></td><td>QĐ 232/QĐ-TTg; QĐ 263/QĐ-TTg</td></tr>
+      <tr><td>14</td><td>940.000 doanh nghiệp tư nhân; hơn 5 triệu hộ kinh doanh; 82% số lao động (năm 2025)</td><td>Quy mô khu vực kinh tế tư nhân</td><td>VCCI 7/5/2025 (chú thích c10-nq68)</td></tr>
+      <tr><td>14</td><td>45.000 doanh nghiệp đăng ký mới 1991-1999; 55.800 trong 2000-2002</td><td>Tác động Luật Doanh nghiệp 1999 (số lịch sử, không cần cập nhật)</td><td>CIEM qua JIL 8/2003 (c10-ldn)</td></tr>
+      <tr><td>14</td><td>Hội nghị cán bộ tỉnh Vĩnh Phú 6/11/1968 và câu kết luận &quot;dẫn đến hậu quả phát triển tư tưởng tư lợi...&quot;</td><td>Mốc lịch sử khoán hộ (không cần đưa lên web, bản đầy đủ giữ)</td><td>Viện KHNN VN 30/12/2020 (c10-kn-hoithao)</td></tr>
+      <tr><td>15</td><td>77,3% kim ngạch xuất khẩu hàng hóa do khu vực FDI làm ra (2025)</td><td>Mức phụ thuộc vào doanh nghiệp vốn nước ngoài; cập nhật theo năm</td><td>Cục Thống kê, báo cáo KT-XH năm 2025 (c11-fdi)</td></tr>
+      <tr><td>15</td><td>306 doanh nghiệp Việt trong mạng lưới cung ứng Samsung, tỷ lệ nội địa hóa 35% (đầu năm 2024)</td><td>Mức liên kết với nhà cung cấp trong nước</td><td>Nhà đầu tư qua VCCI 17/3/2026 (c11-samsung)</td></tr>
+      <tr><td>16</td><td>Giá chào bán sơ cấp căn hộ Hà Nội quý III/2026: Savills 107 triệu/m², VARS 79,3 triệu/m², CBRE 86 triệu/m²</td><td>Giá căn hộ theo ba rổ khác nhau; cập nhật mỗi quý</td><td>Savills 15/10/2026; VARS 11/11/2026; CBRE 16/10/2026 (nh-savills, nh-vars, nh-cbre)</td></tr>
+      <tr><td>16</td><td>Thu nhập bình quân đầu người Hà Nội 2025: 8,374 triệu đồng/tháng</td><td>Mẫu số của phép &quot;đếm số năm lương&quot;; cập nhật khi có Khảo sát mức sống mới</td><td>Cục Thống kê, KSMS 2025 (nh-thunhap)</td></tr>
+      <tr><td>16</td><td>404 dự án chậm triển khai ở Hà Nội, 148 dự án vướng ở TP.HCM, Cần Thơ 8/34 dự án vướng giá đất (3/2024)</td><td>Tắc nghẽn thủ tục dự án</td><td>Tin nhanh Chứng khoán 11/3/2024 (nh-vuongmac)</td></tr>
+      <tr><td>16</td><td>Bảng giá đất từ 1/1/2026, hệ số điều chỉnh hằng năm; Luật Đất đai sửa đổi 21/11/2026: hội đồng nhân dân tỉnh quyết bảng giá và hệ số 3 năm một lần từ 1/1/2028</td><td>Tiến trình đổi cách tính giá đất; cập nhật khi có nghị định hướng dẫn</td><td>NQ 254/2025/QH15; Luật 47/2026/QH16 (nh-banggia)</td></tr>
+      <tr><td>16</td><td>Dư nợ tín dụng bất động sản cuối 6/2026: khoảng 5,14 triệu tỷ đồng, 25,5% tổng dư nợ</td><td>Mức tiền vay chảy vào nhà đất; cập nhật theo quý</td><td>NHNN qua Tiền Phong 20/8/2026 (nh-tindung)</td></tr>
+      <tr><td>16</td><td>CBRE quý III/2026: hơn 3.900 căn bán được, giảm 66% so với cùng kỳ</td><td>Thị trường lạnh khi lãi tăng; cập nhật theo quý</td><td>CBRE qua Doanh nhân 16/10/2026 (nh-cbre)</td></tr>
+      <tr><td>16</td><td>Nhà ở xã hội đến 10/2026: 92,6% chỉ tiêu; 226.019 căn hoàn thành; 369.735 đang xây; 330.575 mới chấp thuận chủ trương</td><td>Tiến độ Đề án 1 triệu căn; cập nhật theo quý</td><td>Bộ Xây dựng qua VietnamPlus 6/11/2026 (nh-noxh)</td></tr>
+      <tr><td>16</td><td>Thuế sử dụng đất phi nông nghiệp: đất chưa sử dụng đúng quy định 0,15%/năm, đất ở trong hạn mức 0,03%</td><td>Mức thuế với đất để không trước luật mới</td><td>Luật 48/2010/QH12 (nh-thuebds)</td></tr>
+      <tr><td>18</td><td>28 ngân hàng; giảm gần 3.000 nhân viên (tổng gần 280.000 người)</td><td>Nhân sự ngân hàng nửa đầu năm 2025</td><td>Tuổi Trẻ 11/8/2025</td></tr>
+      <tr><td>18</td><td>14,2 triệu người từ 60 tuổi (2024); khoảng 18 triệu (dự báo 2030)</td><td>Già hóa dân số</td><td>Cục Thống kê 13/1/2025</td></tr>
+      <tr><td>18</td><td>quý III/2026: 25,1% (13,3 triệu người)</td><td>Tỷ trọng lao động nông, lâm, thủy sản</td><td>Thông cáo lao động quý III/2026</td></tr>
+      <tr><td>18</td><td>9 tháng 2026: 32,4 triệu người, 61,5% (quý III 60,6%)</td><td>Lao động phi chính thức</td><td>Thông cáo lao động quý III/2026</td></tr>
+      <tr><td>18</td><td>19% (bản 8/2026); 15% (dữ liệu đến 7/2025); 13% (ước lượng hồi quy 8/2025)</td><td>Mức hụt việc làm của người 22-25 tuổi ở nghề chịu tác động AI</td><td>Brynjolfsson, Chandar, Chen, &quot;Canaries in the Coal Mine?&quot;</td></tr>
+      <tr><td>18</td><td>75 tuổi (hạ từ 80)</td><td>Tuổi hưởng trợ cấp hưu trí xã hội</td><td>Luật BHXH 2024, Báo Thanh tra 23/7/2024</td></tr>
+      <tr><td>19</td><td>911 điểm (11/2022); giảm 32,78% cả năm 2022</td><td>VN-Index năm 2022</td><td>Nhà Đầu tư</td></tr>
+      <tr><td>19</td><td>7.800 hội viên; thẻ hơn 70 đô la; hơn 17 đô la mỗi buổi so với 10 đô la vé lẻ</td><td>Thẻ tập thể dục ở Mỹ</td><td>DellaVigna và Malmendier</td></tr>
+      <tr><td>20</td><td>tháng 7/2024</td><td>Viện Tim TP.HCM mở ứng dụng đặt lịch khám</td><td></td></tr>
+    </table>
+  </section>
+  <section id="hieulam">
+    <h2>Hiểu lầm thường gặp</h2>
+    <p>20 câu dưới đây nghe rất xuôi tai, nên người ta hay nói như một lẽ hiển nhiên. Mỗi câu kèm vài dòng giải thích vì sao nó trượt và chương sách bàn kỹ chuyện ấy. Số liệu trong phần giải thích đều lấy từ sách.</p>
+    <ol class="myths">
+      <li><b>Có bằng đại học là chắc lương cao.</b> Năm 2024, người làm công có bằng đại học trở lên kiếm bình quân gần 12 triệu đồng một tháng, gấp chừng 1,6 lần người không có trình độ chuyên môn kỹ thuật. Nhưng khoảng chênh ấy chưa hẳn do tấm bằng, vì người vào được đại học có thể vốn chăm hơn, nhà khá hơn, quen biết rộng hơn. Cùng năm ấy, người có chứng chỉ sơ cấp nghề kiếm khoảng 9,8 triệu, nhỉnh hơn người có bằng cao đẳng (khoảng 9,2 triệu); còn cái mất thật của tấm bằng phải tính cả mấy năm lương bỏ lại.<span class="ch">Chương 2</span></li>
+      <li><b>Giá tăng là do con buôn tham.</b> Năm 2019, dịch tả lợn châu Phi buộc tiêu hủy khoảng 6 triệu con lợn, cuối năm đàn lợn chỉ còn chừng 3/4, nên giá thịt lợn vọt lên mà chẳng cần ai găm hàng. Trước một cú tăng giá, hãy hỏi cả hai phía chợ: người mua vừa đổi gì, người bán vừa đổi gì. Kẻ găm hàng có thật, nhưng hiếm khi là gốc của một cơn khan hiếm kéo dài, còn người đầu cơ đoán sai thì chính họ ôm lỗ, như đám phe vé BlackPink sát ngày diễn.<span class="ch">Chương 3</span></li>
+      <li><b>Ra lệnh ghìm giá là bảo vệ được người mua.</b> Mệnh lệnh không làm mọc thêm hàng. Giá bị ghìm thấp hơn chi phí thì khan hiếm đổi sang hình dạng khác: hàng người xếp, chợ đen, hàng kém đi. Năm 2022, khi giá xăng tính theo công thức thấp hơn chi phí thật, chiều 10/10 ở Thành phố Hồ Chí Minh cứ năm cây xăng thì hơn một cây treo biển hết hàng.<span class="ch">Chương 3, 11</span></li>
+      <li><b>Thưởng theo chỉ tiêu thì người ta sẽ làm tốt hơn.</b> Năm 1902, Hà Nội thưởng 1 xu cho mỗi đuôi chuột và nhận về cả những trại nuôi chuột lấy đuôi. Thưởng cho con số nào thì nhận về đúng con số ấy, chưa chắc nhận được điều mình mong. Năm 2007, khi kỳ thi tốt nghiệp được coi nghiêm hơn, tỷ lệ đỗ cả nước từ khoảng 90% rơi xuống khoảng 67% ở lần thi đầu, vì con số thôi bị làm đẹp.<span class="ch">Chương 5</span></li>
+      <li><b>Cứ phạt thật nặng là hết vi phạm.</b> Người định vi phạm cân cái được với cái mất nhân với khả năng bị bắt, nên khi khả năng bị bắt còn thấp thì tăng mức phạt chẳng đổi được bao nhiêu. Nhiều nghiên cứu cho thấy khả năng gần như chắc chắn bị bắt răn đe mạnh hơn một mức phạt nặng mà hiếm ai phải chịu; một chiếc camera phạt nguội có thể hiệu quả hơn tăng gấp đôi mức phạt.<span class="ch">Chương 5</span></li>
+      <li><b>GDP bình quân đầu người là số tiền mỗi người dân có.</b> Năm 2025, GDP bình quân khoảng 125,5 triệu đồng mỗi người, còn thu nhập bình quân đầu người của hộ gia đình chỉ khoảng 72 triệu, bằng khoảng 57%. Phần chênh là lợi nhuận doanh nghiệp (có phần chuyển ra nước ngoài), thuế, tiền bù máy móc hao mòn. Con số bình quân lại bị người giàu nhất kéo lên, nên người đứng giữa hàng thường có ít hơn thế.<span class="ch">Chương 6</span></li>
+      <li><b>Tiết kiệm lãi 6% là đang lời 6%.</b> Con số trong sổ chỉ cho biết tiền tăng bao nhiêu, không cho biết tiền mua thêm được bao nhiêu. Gửi lãi 6% một năm mà giá cả tăng 8% thì người gửi đang nghèo đi, dù sổ vẫn tăng đều. Lãi thật bằng lãi trên sổ trừ đi mức tăng giá; máy tính nhỏ ở cuối trang này làm phép trừ ấy cho bạn.<span class="ch">Chương 6, 9</span></li>
+      <li><b>In thêm tiền thì ai cũng giàu.</b> Tiền chỉ là cây thước, của cải thật là gạo, nhà, máy móc làm ra được. Khi nhà máy nào cũng đang chạy hết sức, tiền in thêm khiến mọi người cầm nhiều tiền hơn đi mua đúng ngần ấy hàng, thế là giá bị đẩy lên. Những năm 1986-1988, khi nhà nước in tiền bù chỗ ngân sách thiếu hụt, giá cả tăng ba con số mỗi năm, riêng năm 1986 khoảng 774%; người mất nhiều nhất là người chịu khó dành dụm.<span class="ch">Chương 6, 7, 9</span></li>
+      <li><b>Khó khăn thì ai cũng thắt lưng buộc bụng là tốt cho cả nước.</b> Khôn với một nhà có thể dại với cả xóm. Chi tiêu của người này là thu nhập của người kia, nên khi tất cả cùng thắt chặt một lúc thì hàng ế, người mất việc, thu nhập cả xóm tụt, kể cả của người tiết kiệm nhất. Đó là nghịch lý tiết kiệm, chuyện của con hẻm nhà trọ ở Bình Dương năm 2023.<span class="ch">Chương 7</span></li>
+      <li><b>Ký ở quầy ngân hàng thì đều là tiền gửi, có nhà nước bảo đảm.</b> Trái phiếu doanh nghiệp, hợp đồng bảo hiểm nhân thọ, chứng chỉ quỹ dù ký ngay tại quầy cũng không phải tiền gửi. Người gửi tiết kiệm ở SCB vẫn rút được tiền, còn người mua trái phiếu nhóm Vạn Thịnh Phát qua lời giới thiệu ở quầy thì đến cuối năm 2026 mới được trả lại chưa tới một nửa số còn nợ. Bảo hiểm tiền gửi chỉ trả tối đa 350 triệu đồng mỗi người tại một ngân hàng.<span class="ch">Chương 8</span></li>
+      <li><b>Vàng là của để dành không bao giờ lỗ.</b> Vàng không sinh lãi; giá vàng miếng chạy theo giá thế giới và khoảng chênh do chính sách, mà cả hai đều lên được xuống được. Ai mua vàng SJC ở đỉnh tháng 8/2011 thì hơn 2 năm sau bán lại mất gần 30%; ai mua ở đỉnh cuối tháng 1/2026 thì chưa đầy 10 tháng sau cũng mất khoảng 30%. Mua rồi bán ngay còn mất thêm phần chênh giữa giá bán ra và giá mua vào.<span class="ch">Chương 9</span></li>
+      <li><b>Thị trường hỏng ở đâu thì nhà nước vào sửa là xong.</b> Chỉ ra chỗ thị trường hỏng mới là một nửa việc bắt mạch; nửa kia là hỏi nhà nước có đủ thông tin và có thật lòng chữa đúng bệnh không. Được ưu ái vốn vay, đến giữa năm 2010 Vinashin nợ khoảng 86 nghìn tỷ đồng, gấp khoảng 11 lần vốn chủ sở hữu. Trước một chính sách, phải so cái hỏng của thị trường nếu để mặc với cái hỏng của nhà nước nếu nhảy vào.<span class="ch">Chương 10, 11</span></li>
+      <li><b>Thuế đánh vào ai thì người ấy chịu.</b> Luật quyết định ai cầm tờ khai, còn cung, cầu và thói quen của thị trường quyết định ai trả tiền. Bên nào ít đường né hơn thì gánh phần lớn hơn: thuế xăng phần nhiều rơi lên người đi xe, vì sáng mai họ vẫn phải đi làm.<span class="ch">Chương 12</span></li>
+      <li><b>Giảm thuế giá trị gia tăng thì người nghèo được lợi nhiều nhất.</b> Với hàng người bán tự đặt giá như quán cà phê, quán phở, khoản giảm có khi không về tới hóa đơn. Kể cả khi giảm thuế chuyển hết vào giá, phép tính của tác giả trên Khảo sát mức sống dân cư 2024 cho thấy cứ 14 đồng giảm thuế thì khoảng 1 đồng đến nhóm 20% nghèo nhất, vì người khá giả tiêu nhiều hơn nên được giảm nhiều hơn.<span class="ch">Chương 12</span></li>
+      <li><b>Nước nghèo là vì người dân lười.</b> Anh thợ hồ sang Hàn Quốc vẫn đôi tay ấy mà kiếm gấp mấy lần ở quê, vì nền kinh tế quanh anh làm ra nhiều hơn từ mỗi giờ lao động. Một cuốn sách phương Tây năm 1903 từng tả người Nhật là lười biếng. Ở Vĩnh Phúc những năm 1960, cùng đất ấy, cùng người ấy, chỉ đổi cách chia thóc là lúa lên; chỗ đáng nhìn là luật chơi đang thưởng cho điều gì.<span class="ch">Chương 14</span></li>
+      <li><b>Xuất siêu là thắng, nhập siêu là thua.</b> Nhà bạn ngày nào cũng nhập siêu với bà bán rau đầu ngõ mà chẳng ai thấy mình thua. Buôn bán nhằm có được thứ mình cần, tốn ít hơn so với tự làm lấy, chứ không nhằm bán nhiều hơn mua. Cán cân thương mại có ý nghĩa riêng, liên quan tới tiết kiệm, đầu tư và nợ nước ngoài, nhưng không giống tỷ số của một trận bóng.<span class="ch">Chương 15</span></li>
+      <li><b>Bảo hộ ngành trong nước thì cả nước được lợi.</b> Hàng rào thuế quan bắt người mua trả đắt hơn; cái lợi dồn cho vài doanh nghiệp được che chắn, còn cái thiệt chia mỏng cho hàng triệu người nên ít ai lên tiếng. Hàn Quốc từng nâng đỡ thành công vì kèm điều kiện: doanh nghiệp được ưu đãi phải đạt chỉ tiêu xuất khẩu, không đạt thì mất ưu đãi. Nhiều nước Mỹ Latinh và châu Phi bảo hộ mấy chục năm mà không có bài kiểm tra ấy, ngành non trẻ mãi không lớn nổi.<span class="ch">Chương 15, 11</span></li>
+      <li><b>Giá nhà cao chỉ tại giới đầu cơ.</b> Cung nhà phản ứng rất chậm vì chặng giấy tờ thường dài hơn chặng xây. Căn nhà lại làm cùng lúc hai việc, chỗ để ở và chỗ để cất của. Thêm tiền vay: cuối tháng 6/2026, khoảng 25,5% tổng dư nợ của nền kinh tế chảy vào bất động sản. Đầu cơ có phần, nhưng ba lực kia mới đủ giải thích vì sao giá nhà đi xa tiền lương đến thế.<span class="ch">Chương 16</span></li>
+      <li><b>Máy móc và AI sẽ lấy hết việc làm.</b> Niềm tin rằng nền kinh tế chỉ có một khối việc cố định đã sai suốt 200 năm: máy rút tiền mọc khắp nước Mỹ mà số giao dịch viên ngân hàng không giảm, vì chi nhánh rẻ đi thì ngân hàng mở thêm. Nhưng tổng số việc không cạn chưa có nghĩa là không ai mất việc, nhất là khi 9 tháng đầu năm 2026 có 61,5% người có việc làm ở Việt Nam đang làm việc phi chính thức, đứng ngoài tấm lưới bảo hiểm.<span class="ch">Chương 18</span></li>
+      <li><b>Giá đang lên thì mua vào là chắc lãi.</b> Mua chỉ vì giá còn lên là đang trông vào một người mua sau. Một chủ trang trại ở Tuyên Quang mua lan var, 2 tuần lãi 500 triệu đồng, rồi vay thêm để đầu tư; đến cuối năm 2023, một chậu lan var to chỉ còn khoảng 100.000 đồng, còn ông mất hết tiền tiết kiệm và nợ chừng 10 tỷ.<span class="ch">Chương 19</span></li>
+    </ol>
+  </section>
+
+  <section id="tailieu">
+    <h2>Tài liệu tải về</h2>
+    <p>Ba tài liệu đi kèm sách, tải miễn phí, dùng tự do cho việc dạy và học.</p>
+    <ul class="files">
+      <li><a href="tailieu/CauHoiGiangVien.pdf"><b>Bộ câu hỏi cho giảng viên</b></a> (PDF, 16 trang). Mỗi chương 3 câu hỏi hiểu bài có gợi ý đáp án ngắn và 1 câu tranh luận nêu sẵn hai phía, dùng cho kiểm tra nhanh hay buổi thảo luận.</li>
+      <li><a href="tailieu/DoiChieuDeCuong.pdf"><b>Đối chiếu đề cương</b></a> (PDF, 10 trang). Bảng đối chiếu 20 chương với các chủ đề của học phần kinh tế học nhập môn (vi mô, vĩ mô), ghi rõ chỗ sách còn mỏng, kèm kế hoạch 15 buổi học.</li>
+      <li><a href="tailieu/BoiDuongCongChuc.pdf"><b>Tập bồi dưỡng công chức</b></a> (PDF, 23 trang). Phiếu bắt mạch trước khi kê đơn để chấm một chính sách, cách đọc một con số trên báo, 10 câu hỏi về luật chơi, 3 bài thực hành từ các ca trong sách và cách chạy một buổi học 3 giờ.</li>
+    </ul>
+  </section>
+  <section id="thuatngu">
+    <h2>Bảng thuật ngữ</h2>
+    <details><summary>Mở bảng thuật ngữ (bản in rút gọn không in bảng này)</summary>
+<p>Dưới đây là những khái niệm cốt lõi đã gặp trong sách, mỗi mục một
+định nghĩa ngắn gọn và đời thường, xếp gần theo trình tự xuất hiện, vài
+mục đến từ Hộp đồ nghề.</p>
+<p><strong>Bàn tay vô hình.</strong> Hình ảnh Adam Smith dùng để chỉ
+chuyện vô số cá nhân hành động vì lợi ích riêng, qua cạnh tranh và trao
+đổi, vẫn có thể tạo ra một trật tự chung mà không ai thiết kế.</p>
+<p><strong>Phân công lao động.</strong> Chia một công việc thành nhiều
+khâu nhỏ, mỗi người chỉ làm một khâu, nhờ đó cả nhóm làm ra nhiều hơn
+hẳn so với khi mỗi người tự làm trọn. Adam Smith coi đây là gốc rễ của
+giàu có.</p>
+<p><strong>Trật tự tự phát.</strong> Trật tự nảy sinh từ vô số hành động
+cá nhân nhưng không nằm trong ý định hay thiết kế của bất kỳ ai, như
+ngôn ngữ, lối mòn, hay phần lớn nền kinh tế.</p>
+<p><strong>Khan hiếm.</strong> Nguồn lực bao giờ cũng có hạn so với mong
+muốn, nên con người luôn phải lựa chọn. Đây là điểm khởi hành của toàn
+bộ kinh tế học.</p>
+<p><strong>Chi phí cơ hội.</strong> Giá trị của phương án tốt nhất mà ta
+từ bỏ để theo đuổi một lựa chọn. Cái ta thật sự phải trả cho một thứ là
+con đường khác mà ta đành bỏ.</p>
+<p><strong>Chi phí chìm.</strong> Những gì đã bỏ ra và không lấy lại
+được, vì thế không nên để chúng chi phối quyết định cho tương lai. Tiếc
+của đã mất là cái bẫy khiến ta mất thêm.</p>
+<p><strong>Chi phí cố định và chi phí biến đổi.</strong> Chi phí cố định
+là khoản phải trả dù bán nhiều hay ít, như tiền thuê mặt bằng, lương
+theo tháng; chi phí biến đổi đi theo từng món bán ra, như nguyên
+liệu.</p>
+<p><strong>Điểm hòa vốn.</strong> Số món phải bán để phần chênh giữa giá
+bán và chi phí biến đổi vừa đủ trả hết chi phí cố định; bán dưới mức ấy
+là lỗ.</p>
+<p><strong>Tư duy ở cận biên.</strong> Lối nghĩ “thêm một chút nữa thì
+sao”, cân nhắc lợi ích và chi phí của đơn vị tăng thêm, thay vì nhìn
+tổng thể chung chung.</p>
+<p><strong>Cung và cầu.</strong> Hai lực quyết định cái giá: người mua
+muốn mua nhiều hơn khi giá thấp, người bán muốn bán nhiều hơn khi giá
+cao. Giá có xu hướng trượt về điểm cân bằng, tức mức giá mà tại đó lượng
+hàng người mua muốn mua vừa khớp với lượng hàng người bán muốn bán.</p>
+<p><strong>Đường cầu và đường cung</strong> (<em>demand curve</em>,
+<em>supply curve</em>). Hai đường vẽ trên cùng một hình: đường cầu cho
+biết ở mỗi mức giá người mua muốn mua bao nhiêu, đường cung cho biết
+người bán muốn bán bao nhiêu. Chỗ hai đường cắt nhau là giá cân bằng.
+Khi cầu hay cung đổi thì cả đường dời chỗ, như buổi chiều mưa, đường cầu
+gọi xe dời sang phải, còn đường cung dời sang trái, nên giá vọt lên.</p>
+<p><strong>Độ co giãn của cầu.</strong> Mức độ người mua phản ứng khi
+giá thay đổi. Với gạo, rau, thịt, cầu ít co giãn: giá đổi nhiều mà lượng
+mua đổi ít, nên chỉ cần thừa hay thiếu một chút là giá đã nhảy mạnh,
+sinh ra cảnh “được mùa mất giá”.</p>
+<p><strong>Giá trần và giá sàn.</strong> Mức giá tối đa hoặc tối thiểu
+do nhà nước ấn định. Giá trần (thấp hơn giá cân bằng) gây ra khan hiếm;
+giá sàn (cao hơn giá cân bằng) gây ra dư thừa.</p>
+<p><strong>Lương tối thiểu.</strong> Mức lương thấp nhất mà luật buộc
+người sử dụng lao động phải trả, một dạng giá sàn đặt cho sức lao động.
+Ở Việt Nam, lương tối thiểu vùng chỉ áp cho người làm việc theo hợp đồng
+lao động.</p>
+<p><strong>Việc làm phi chính thức.</strong> Việc làm nằm ngoài tấm lưới
+bảo hiểm xã hội bắt buộc, gồm việc làm trong khu vực phi chính thức
+(buôn bán nhỏ, làm thuê theo ngày, phụ việc trong cơ sở gia đình) và
+việc làm ở doanh nghiệp mà không được đóng bảo hiểm xã hội bắt buộc. Năm
+2025, 63,1% người có việc làm ở Việt Nam thuộc nhóm này; trong 9 tháng
+đầu năm 2026 tỷ lệ ấy là 61,5%, tức chừng 3/5.</p>
+<p><strong>Đầu cơ.</strong> Mua một thứ không để dùng mà để chờ bán lại
+với giá cao hơn: mua vào lúc nó đang rẻ (đang thừa), bán ra lúc nó đắt
+(đang khan). Đầu cơ có thể điều hòa nguồn hàng, nhưng cũng là đánh cược,
+vì đoán sai thì người đầu cơ ôm lỗ. Khi căn nhà vừa để ở vừa để cất của,
+người mua để đầu cơ và người mua để ở chen nhau trên cùng một cái
+chợ.</p>
+<p><strong>Thực chứng và chuẩn tắc.</strong> Câu hỏi thực chứng hỏi thế
+giới đang vận hành thế nào; câu hỏi chuẩn tắc hỏi thế giới nên ra sao và
+tất yếu dính tới phán đoán giá trị.</p>
+<p><strong>Vấn đề tri thức.</strong> Luận điểm của Hayek: tri thức mà
+nền kinh tế cần để vận hành nằm rải rác trong đầu hàng triệu người,
+không bộ máy trung tâm nào thu thập kịp; hệ thống giá giải được bài toán
+này mà không cần dồn thông tin về một chỗ.</p>
+<p><strong>Tri thức ẩn.</strong> Phần hiểu biết ta có mà không nói hết
+thành lời được, như tay nghề, linh cảm; Polanyi gọi đó là những gì ta
+“biết nhiều hơn nói ra được”. Loại tri thức này không viết thành báo cáo
+gửi lên trung ương được, nên chỉ phát huy khi người nắm giữ nó được tự
+do hành động tại chỗ.</p>
+<p><strong>Động lực.</strong> Khung thưởng phạt chi phối cách con người
+hành động. Người ta làm theo những gì thật sự được thưởng và tránh những
+gì thật sự bị phạt, chứ không làm theo điều người đặt luật chơi mong
+muốn.</p>
+<p><strong>Hệ quả ngoài ý muốn.</strong> Kết quả trái với điều người đặt
+ra luật chơi mong muốn, khi người ta làm đúng theo cái được thưởng chứ
+không nhắm tới mục tiêu thật, như vụ thưởng theo đuôi chuột ở Hà Nội năm
+1902.</p>
+<p><strong>Định luật Goodhart.</strong> Khi một thước đo trở thành mục
+tiêu, nó không còn là một thước đo tốt nữa, vì người ta sẽ làm đẹp con
+số kể cả bằng cách bóp méo thực tại.</p>
+<p><strong>Danh nghĩa và thực tế.</strong> Con số danh nghĩa tính theo
+giá hiện hành; con số thực tế đã loại bỏ ảnh hưởng của biến động giá.
+Lương danh nghĩa tăng chưa chắc lương thực tế tăng.</p>
+<p><strong>Lạm phát.</strong> Mặt bằng giá chung tăng lên, làm đồng tiền
+mất giá. Lạm phát giống một cây thước tự co lại, cũng giống một kẻ trộm
+vô hình lấy của người tiết kiệm nhiều hơn của ai hết.</p>
+<p><strong>Lạm phát cơ bản.</strong> Chỉ số giá tiêu dùng sau khi loại
+ra những mặt hàng hay nhảy giá vì lý do nhất thời (lương thực, thực phẩm
+tươi sống, năng lượng) và những mặt hàng do Nhà nước quản lý giá như y
+tế, giáo dục; dùng để biết áp lực giá cả có lan rộng hay không.</p>
+<p><strong>GDP.</strong> Tổng sản phẩm trong nước, thước đo quy mô sản
+xuất của nền kinh tế. Nó đếm thừa (cả những khoản chi vá víu) và đếm
+thiếu (công việc chăm sóc không lương, môi trường, những điều quý không
+có giá), nên không đo được mọi điều ta quan tâm.</p>
+<p><strong>Tổng thu nhập quốc dân (GNI).</strong> GDP trừ đi phần thu
+nhập mà người và doanh nghiệp nước ngoài kiếm được trong nước rồi chuyển
+về nước họ, cộng phần người và doanh nghiệp trong nước kiếm được từ nước
+ngoài. Ngân hàng Thế giới dùng GNI bình quân đầu người để xếp các nước
+vào nhóm thu nhập thấp, trung bình thấp, trung bình cao và cao.</p>
+<p><strong>Trung vị.</strong> Con số của người đứng chính giữa khi xếp
+mọi người từ thấp đến cao. Khác với số bình quân, nó không bị vài người
+rất giàu kéo lên.</p>
+<p><strong>Hiệu ứng số nhân.</strong> Một đồng chi tiêu của người này
+thành thu nhập của người kia, rồi lại được tiêu tiếp, nên một khoản chi
+tiêu tăng hay giảm lúc đầu rốt cuộc làm tổng thu nhập của cả nền kinh tế
+thay đổi nhiều hơn chính khoản ấy.</p>
+<p><strong>Nghịch lý tiết kiệm.</strong> Thắt chặt chi tiêu là khôn
+ngoan với một người, nhưng nếu cả xã hội cùng làm thì tổng chi tiêu sụt,
+doanh nghiệp ế hàng, sa thải lan rộng, ai cũng nghèo đi. Suy thoái cứ
+thế tự khoét sâu thêm.</p>
+<p><strong>Trái phiếu doanh nghiệp.</strong> Giấy nhận nợ do doanh
+nghiệp phát hành để vay tiền trực tiếp của người mua, hẹn trả lãi và trả
+gốc khi đến hạn. Phát hành riêng lẻ là bán cho một nhóm nhà đầu tư thay
+vì chào bán rộng rãi ra công chúng.</p>
+<p><strong>Giảm phát do nợ.</strong> Vòng xoáy mà Irving Fisher mô tả
+sau cuộc Đại suy thoái: giá cả giảm làm món nợ ghi bằng tiền nặng thêm,
+người mắc nợ phải bán tháo và thắt chặt chi tiêu, đẩy giá xuống
+tiếp.</p>
+<p><strong>Lãi suất điều hành.</strong> Những mức lãi suất ngân hàng
+trung ương áp dụng khi cho các ngân hàng thương mại vay, như lãi suất
+tái cấp vốn. Ngân hàng trung ương nâng lãi suất điều hành để kìm giá cả,
+hạ xuống để kích thích chi tiêu; tác dụng đến chậm, mà kìm giá thì cũng
+kìm luôn đà tạo việc làm. Ở Việt Nam, bên cạnh cái cần này còn có hạn
+mức tăng trưởng tín dụng và việc mua bán ngoại tệ để giữ tỷ giá. Ca nổi
+tiếng nhất là Paul Volcker ở Mỹ cuối thập niên 1970 đầu thập niên 1980:
+đẩy lãi suất lên rất cao để dập lạm phát, đổi bằng mấy năm thất nghiệp
+tăng vọt.</p>
+<p><strong>Hạn mức tăng trưởng tín dụng.</strong> Mức tăng dư nợ cho vay
+tối đa mà Ngân hàng Nhà nước giao cho từng ngân hàng thương mại trong
+năm, dân trong nghề gọi là “room”. Hết room thì ngân hàng thôi cho vay
+dù khách sẵn lòng trả lãi cao, nên đây là cách ghìm thẳng lượng tiền cho
+vay, không qua lãi suất.</p>
+<p><strong>Tỷ giá.</strong> Cái giá của đồng tiền này tính bằng đồng
+tiền kia, như một đô la Mỹ đổi được bao nhiêu đồng Việt Nam. Khi người
+ta tin đồng tiền trong nước sắp mất giá, họ đổ đi mua ngoại tệ và tự đẩy
+tỷ giá lên.</p>
+<p><strong>Đột biến rút tiền.</strong> Người gửi tiền ồ ạt kéo đến rút
+vì tin ngân hàng sắp sụp. Chính cảnh rút ồ ạt ấy có thể làm ngân hàng
+sụp thật, dù trước đó nó vẫn lành mạnh.</p>
+<p><strong>Người cho vay cuối cùng.</strong> Vai trò của ngân hàng trung
+ương: cho các ngân hàng vay trong cơn hoảng loạn để niềm tin khỏi sụp
+đổ, theo nguyên tắc của Bagehot.</p>
+<p><strong>Rủi ro đạo đức.</strong> Khi biết mình không phải gánh hậu
+quả, người ta đâm ra liều hơn, như chủ ngân hàng tin rằng thua lỗ thì
+nhà nước sẽ cứu.</p>
+<p><strong>Bảo hiểm tiền gửi.</strong> Tấm lưới nhà nước giăng cho người
+gửi tiền nhỏ: ngân hàng đổ vỡ thì mỗi người được trả tới một hạn mức (ở
+Việt Nam, từ 13/7/2026, là 350 triệu đồng, tính trên tổng mọi khoản tiền
+gửi của một người tại một ngân hàng), nhờ vậy ít người phải chạy đi rút
+khi có tin đồn. Chỉ tiền gửi bằng đồng Việt Nam của cá nhân được bảo
+hiểm; trái phiếu, hợp đồng bảo hiểm, chứng chỉ quỹ mua tại quầy ngân
+hàng thì không.</p>
+<p><strong>Lãi suất.</strong> Cái giá của việc được dùng tiền sớm hơn,
+tính bằng phần trăm mỗi năm; người đi vay trả cho người cho vay để bù
+cho sự chờ đợi và rủi ro. Theo Fisher, mức lãi suất hình thành ở chỗ gặp
+nhau giữa tính sốt ruột muốn tiêu ngay và cơ hội làm ăn sinh lời.</p>
+<p><strong>Lãi suất thực.</strong> Lãi suất danh nghĩa trừ đi tốc độ
+tăng giá, cho biết sức mua của khoản tiền tăng hay giảm. Khi lãi suất
+thực âm, người ta đổi tiền ra hàng hóa, vàng hay ngoại tệ, như ở Việt
+Nam những năm 1986-1988.</p>
+<p><strong>Thanh khoản.</strong> Mức dễ dàng biến một tài sản thành tiền
+mặt mà không mất nhiều giá trị. Sổ tiết kiệm có thanh khoản cao, miếng
+vàng thấp hơn vì mất khoản chênh mua bán, mảnh đất thấp hơn nữa vì không
+bán được trong một buổi chiều.</p>
+<p><strong>Thất bại thị trường.</strong> Những chỗ thị trường tự hỏng,
+ít nhất ở bốn chỗ: độc quyền, ngoại tác, hàng hóa công và thông tin bất
+đối xứng.</p>
+<p><strong>Tổn thất vô ích.</strong> Phần lợi ích mất đi mà không ai
+được gì, như những bát phở lẽ ra đã được bán và được ăn nếu quán độc
+quyền không đẩy giá lên.</p>
+<p><strong>Độc quyền tự nhiên.</strong> Ngành mà một hệ thống duy nhất
+làm rẻ hơn nhiều hệ thống chạy song song, như đường ống nước hay lưới
+điện, nên thường do nhà nước làm hoặc quy định giá.</p>
+<p><strong>Thị trường ít người bán</strong> (<em>oligopoly</em>). Cái
+chợ chỉ có dăm người bán, như vài hãng bay trên một chặng, nên mỗi bên
+đặt giá đều phải đoán xem bên kia đáp lại ra sao. Chẳng cần ai bàn với
+ai, riêng nỗi lo bị đáp trả đã đủ khiến từng bên ngại hạ giá.</p>
+<p><strong>Lý thuyết trò chơi</strong> (<em>game theory</em>). Cách tính
+xem mỗi bên nên đi nước nào khi kết quả của mình còn tùy nước đi của
+người khác, như hai hãng bay đoán ý nhau trước khi đặt giá vé Tết.</p>
+<p><strong>Ngoại tác.</strong> Chi phí hoặc lợi ích mà một hoạt động gây
+ra cho người ngoài cuộc nhưng cái giá không tính đến, như khói lò gạch
+(hại) hay tiêm chủng (lợi).</p>
+<p><strong>Hàng hóa công.</strong> Những thứ ai cũng hưởng và không thể
+loại trừ ai (con đê, quốc phòng), nên sẽ không được làm đủ nếu để mặc
+thị trường.</p>
+<p><strong>Thông tin bất đối xứng.</strong> Khi người bán biết nhiều hơn
+người mua (hay ngược lại), cái giá không còn truyền tin về chất lượng,
+khiến hàng tốt có thể bị đẩy ra khỏi chợ, như chợ xe máy cũ trong phân
+tích của Akerlof.</p>
+<p><strong>Lựa chọn ngược.</strong> Khi một bên không phân biệt được
+hàng tốt với hàng tồi, hay khách ít rủi ro với khách nhiều rủi ro, giá
+chỉ phản ánh mức trung bình, khiến bên tốt rút lui và cái chợ chỉ còn
+lại hàng kém hoặc khách nhiều rủi ro, như chợ xe máy cũ hay bảo hiểm y
+tế tự nguyện.</p>
+<p><strong>Thất bại của nhà nước.</strong> Những kiểu hỏng riêng của nhà
+nước: bị nhóm lợi ích chi phối, chạy theo thành tích, thiếu thông tin,
+thiếu kỷ luật khi tiêu tiền chung.</p>
+<p><strong>Ràng buộc ngân sách mềm.</strong> Khái niệm của Kornai: một
+doanh nghiệp biết rằng thua lỗ thế nào cũng được cứu thì chẳng có lý do
+gì để chi tiêu dè sẻn, như trường hợp Vinashin.</p>
+<p><strong>Giá cơ sở xăng dầu.</strong> Mức giá do Bộ Công Thương và Bộ
+Tài chính tính theo công thức từ giá thế giới những ngày trước đó cộng
+các chi phí định mức, làm căn cứ để công bố giá bán lẻ tối đa. Công thức
+đi chậm hơn thị trường một nhịp, nên khi chi phí thật đổi nhanh, giá cơ
+sở dễ lệch khỏi chi phí của người bán.</p>
+<p><strong>Quỹ bình ổn giá xăng dầu.</strong> Khoản để dành trích từ giá
+bán xăng dầu khi giá thấp và chi ra để kìm giá khi giá lên cao, nhằm
+giảm những cú nhảy giá đột ngột.</p>
+<p><strong>Chiết khấu (trong bán lẻ xăng dầu).</strong> Phần chênh giữa
+giá doanh nghiệp đầu mối bán buôn cho đại lý và giá đại lý được phép bán
+lẻ, tức phần đại lý được hưởng trên mỗi lít. Chiết khấu bằng 0 hay âm
+nghĩa là đại lý bán ra không có lời, thậm chí lỗ.</p>
+<p><strong>Thuế giá trị gia tăng.</strong> Thuế đánh trên phần giá trị
+tăng thêm ở mỗi khâu mua bán, người bán nộp nhưng đã cộng sẵn trong giá
+hàng (<em>value added tax</em>, VAT). Từ tháng 2/2022 đến hết năm 2026,
+trừ nửa đầu năm 2023, mức 10% được giảm xuống 8% với phần lớn hàng hóa,
+dịch vụ.</p>
+<p><strong>Người chịu thuế thật.</strong> Người cuối cùng phải bớt tiêu
+dùng hay bớt thu nhập vì một khoản thuế, khác với người được luật giao
+việc kê khai và nộp (<em>tax incidence</em>). Gánh nặng thuế nghiêng về
+bên ít đường né hơn, tức bên có cầu hay cung kém co giãn.</p>
+<p><strong>Thuế tiêu thụ đặc biệt.</strong> Thuế đánh thêm vào một số
+mặt hàng nhà nước muốn hạn chế dùng như thuốc lá, bia rượu, nước ngọt
+nhiều đường, xăng (<em>excise tax</em>).</p>
+<p><strong>Thuế gián thu.</strong> Thuế nằm trong giá hàng hóa, dịch vụ,
+người mua trả mà thường không thấy, như thuế giá trị gia tăng, thuế tiêu
+thụ đặc biệt, thuế bảo vệ môi trường.</p>
+<p><strong>Nợ công.</strong> Tổng số nợ mà nhà nước đã vay, phần lớn để
+bù cho những năm chi nhiều hơn thu (<em>public debt</em>). Cuối năm
+2026, nợ công Việt Nam ước khoảng 33-34% GDP, trần là 60%.</p>
+<p><strong>Đường cong Laffer.</strong> Hình vẽ cho thấy số thu thuế bằng
+0 khi thuế suất 0% và khi thuế suất 100%, nên ở đâu đó giữa hai đầu có
+một mức thuế suất cho số thu lớn nhất. Hình vẽ không cho biết đỉnh nằm ở
+đâu.</p>
+<p><strong>Tổn thất vô ích của thuế</strong> (<em>deadweight loss</em>).
+Phần thiệt hại người nộp thuế phải chịu vượt quá số tiền nhà nước thu
+được, vì người ta né thuế bằng cách bỏ những việc đáng làm, như xây bít
+cửa sổ để tránh thuế cửa sổ.</p>
+<p><strong>Thuế lũy tiến và thuế lũy thoái.</strong> Thuế lũy tiến lấy
+một phần thu nhập lớn hơn ở người giàu hơn, như thuế thu nhập cá nhân
+(<em>progressive tax</em>). Thuế lũy thoái lấy một phần thu nhập lớn hơn
+ở người nghèo hơn, như thuế gián thu khi đo theo phần thu nhập
+(<em>regressive tax</em>).</p>
+<p><strong>Khai thác IUU.</strong> Khai thác hải sản bất hợp pháp, không
+báo cáo và không theo quy định (<em>illegal, unreported and unregulated
+fishing</em>). Từ tháng 10/2017, Ủy ban châu Âu giơ “thẻ vàng” cảnh cáo
+Việt Nam về lỗi này; chưa gỡ được thì hải sản xuất sang châu Âu bị kiểm
+tra kỹ hơn, làm tiếp không xong có thể bị “thẻ đỏ”.</p>
+<p><strong>Bi kịch của mảnh đất chung.</strong> Khi một nguồn lực chung
+không ai sở hữu riêng bị vắt kiệt, vì mỗi người hưởng trọn cái lợi còn
+cái hại chia cho tất cả.</p>
+<p><strong>Đồng quản lý.</strong> Cách giao cho một tổ chức cộng đồng
+quyền quản lý và khai thác một vùng nước xác định, đổi lại họ phải tự
+đặt luật, tự canh giữ nguồn lợi ở đó, như các tổ cộng đồng ở Vạn Tường
+(Quảng Ngãi); Luật Thủy sản 2017 mở đường cho cách làm này.</p>
+<p><strong>Hạn ngạch chuyển nhượng được.</strong> Cách chia quyền đánh
+bắt ở một vùng biển thành từng phần (<em>individual transferable
+quota</em>, ITQ): nhà nước định tổng lượng cá được đánh mỗi năm, chia
+tổng ấy thành phần cho từng chủ tàu, phần ấy mua bán và cho thuê được
+như một tài sản. Con cá nhỏ thả hôm nay vẫn góp vào phần của chính mình
+mùa sau, nên cuộc đua vét biển mất lý do tồn tại; đổi lại, hạn ngạch dễ
+dồn về tay vài công ty lớn và chỉ có nghĩa khi nhà nước biết chắc tàu
+nào bốc lên bờ bao nhiêu cá.</p>
+<p><strong>Thuế carbon và mua bán phát thải.</strong> Hai cách gắn một
+cái giá cho việc thải khí nhà kính: đánh thuế trên mỗi tấn khí thải
+(tinh thần Pigou) hoặc đặt tổng hạn mức rồi cho mua bán giấy phép (tinh
+thần Coase), để cái giá phản ánh cả cái hại cho môi trường.</p>
+<p><strong>Định giá carbon</strong> (<em>carbon pricing</em>). Tên chung
+cho các cách gắn một cái giá vào mỗi tấn khí nhà kính thải ra, bằng thuế
+carbon hay bằng hạn mức kèm giấy phép mua bán được. Gom 80 nghiên cứu về
+21 hệ thống như thế, người ta thấy ở phần lớn các hệ thống khí thải giảm
+từ 5% đến 21% ngay trong mấy năm đầu.</p>
+<p><strong>Tỷ lệ chiết khấu.</strong> Con số cho biết một đồng lợi ích
+hay thiệt hại ở tương lai đáng giá bao nhiêu so với một đồng hôm nay;
+chọn nó cao hay thấp quyết định ta chịu hy sinh bao nhiêu cho thế hệ
+sau.</p>
+<p><strong>Kiều hối</strong> (<em>remittances</em>). Tiền người đi làm
+ăn ở nước ngoài và kiều bào gửi về cho người thân, như phần lương anh
+thợ hồ ở Hàn Quốc gửi về cho mạ ở Nghệ An. Ở Việt Nam, dòng tiền này mỗi
+năm lớn cỡ vài phần trăm GDP, giúp tỷ giá khó bị đẩy lên.</p>
+<p><strong>Cán cân vãng lai</strong> (<em>current account</em>). Bản ghi
+những khoản ngoại tệ một nước kiếm được và tiêu đi với nước ngoài trong
+một năm, từ tiền bán hàng, mua hàng đến tiền người đi làm xa gửi về,
+chưa tính tiền vay mượn hay vốn đầu tư. Kiều hối nằm bên cột thu của bản
+ghi ấy.</p>
+<p><strong>Năng suất.</strong> Khả năng làm ra ngày càng nhiều thứ hữu
+ích từ cùng một lượng nguồn lực. Năng suất mới là nguồn gốc thật của của
+cải, chứ không phải lượng tiền.</p>
+<p><strong>Lãi kép.</strong> Tiền lãi của kỳ trước được cộng vào gốc để
+sinh lãi ở kỳ sau, nên khoản tiền lớn lên theo cấp số nhân. Mẹo nhẩm
+“quy tắc 70”: lấy 70 chia cho tốc độ tăng mỗi năm (tính bằng phần trăm)
+để biết sau bao nhiêu năm khoản tiền gấp đôi.</p>
+<p><strong>Thể chế bao trùm và khai thác.</strong> Thể chế bao trùm bảo
+vệ quyền sở hữu và cạnh tranh, khuyến khích sáng tạo; thể chế khai thác
+vơ vét cho thiểu số, bóp nghẹt động lực. Khác biệt thể chế giải thích
+một phần quan trọng vì sao có nước giàu nước nghèo.</p>
+<p><strong>Bẫy thu nhập trung bình.</strong> Cảnh một nước vọt lên nhờ
+lao động rẻ rồi dừng lại ở mức thu nhập trung bình, vì không chuyển được
+sang tăng trưởng nhờ công nghệ và năng suất.</p>
+<p><strong>Khoán hộ.</strong> Cách giao ruộng và mức sản lượng cho từng
+hộ nông dân trong hợp tác xã, hộ làm ra nhiều thì được hưởng nhiều. Tỉnh
+ủy Vĩnh Phúc thực hiện từ năm 1966, bị dừng cuối năm 1968; về sau được
+công nhận một phần trong Chỉ thị 100 (1981) và trọn vẹn hơn trong Khoán
+10 (1988).</p>
+<p><strong>Lợi thế so sánh.</strong> Trong trao đổi, điều quyết định là
+ai phải hy sinh ít hơn để làm ra một thứ, chứ không phải ai làm rẻ hơn
+tuyệt đối. Nhờ đó cả hai bên cùng lợi dù một bên kém ở mọi mặt.</p>
+<p><strong>Đường cong nụ cười.</strong> Hình vẽ chuỗi giá trị: hai đầu
+cao là thiết kế, thương hiệu, phân phối, hưởng phần lời lớn; đáy là lắp
+ráp, cần nhiều người mà lời mỏng.</p>
+<p><strong>Giá trị gia tăng trong nước trong xuất khẩu.</strong> Phần
+giá trị của hàng xuất khẩu do người lao động, doanh nghiệp và các yếu tố
+sản xuất trên đất nước mình tạo ra, sau khi trừ đi giá trị linh kiện,
+nguyên liệu nhập khẩu (<em>domestic value added</em>); OECD tính chỉ
+tiêu này cho từng ngành trong bộ dữ liệu TiVA. Con số xuất khẩu lớn chưa
+chắc để lại nhiều giá trị trong nước nếu phần nhập khẩu chiếm phần lớn,
+mà phần ở lại cũng gồm cả lợi nhuận của nhà máy vốn nước ngoài, một phần
+trong đó chuyển về công ty mẹ.</p>
+<p><strong>Tỷ số giá nhà trên thu nhập.</strong> Giá một căn nhà điển
+hình chia cho thu nhập một năm của một hộ gia đình điển hình, tức số năm
+cả nhà phải dồn trọn thu nhập mới mua được nhà. Các thang đo quốc tế hay
+coi mức từ 3 trở xuống là vừa túi tiền, trên 5 là rất khó mua; ở Việt
+Nam các ước tính năm 2025-2026 vào khoảng 20-30.</p>
+<p><strong>Độ co giãn của cung.</strong> Mức độ người bán tăng hay giảm
+lượng hàng khi giá thay đổi. Cung rau co giãn nhiều vì vụ sau trồng thêm
+được ngay; cung nhà ít co giãn trong ngắn hạn vì đất, quy hoạch và thủ
+tục khiến một dự án mất nhiều năm.</p>
+<p><strong>Lãi suất thả nổi.</strong> Lãi suất của khoản vay được tính
+lại theo định kỳ, bằng một lãi suất cơ sở do ngân hàng công bố cộng một
+biên độ cố định ghi trong hợp đồng; lãi lên thì tiền trả góp mỗi tháng
+lên theo. Khoản vay mua nhà thường có vài năm lãi ưu đãi cố định rồi mới
+chuyển sang thả nổi.</p>
+<p><strong>Nhà ở xã hội.</strong> Nhà do nhà nước đầu tư hoặc ưu đãi cho
+doanh nghiệp xây, bán hay cho thuê với giá thấp cho người thu nhập thấp,
+công nhân và những đối tượng được luật quy định.</p>
+<p><strong>Thuế tài sản.</strong> Thuế đánh hằng năm vào giá trị tài sản
+người ta đang giữ (nhà, đất), khác với thuế đánh khi mua bán. Nó chỉ làm
+đổi hành vi khi đủ lớn so với mức lên giá mà người giữ tài sản kỳ
+vọng.</p>
+<p><strong>Hệ số Gini.</strong> Con số từ 0 tới 1 đo mức bất bình đẳng
+thu nhập: 0 là tuyệt đối bằng nhau, 1 là một người ôm hết.</p>
+<p><strong>Tấm màn vô minh.</strong> Phép thử của Rawls: chọn luật chơi
+cho xã hội khi chưa biết mình sẽ sinh ra là ai. Từ đó, bất bình đẳng chỉ
+chính đáng khi nó cũng giúp người yếu thế nhất khá lên.</p>
+<p><strong>Ngộ nhận lượng việc làm cố định.</strong> Niềm tin sai rằng
+nền kinh tế chỉ có một khối lượng việc làm cố định, nên máy móc hay
+người mới giành việc thì người khác thất nghiệp.</p>
+<p><strong>Tự động hóa tầm tầm.</strong> Chữ của Acemoglu và Restrepo
+(<em>so-so automation</em>) cho những cỗ máy đủ tốt để doanh nghiệp bớt
+người mà không đủ tốt để làm hàng rẻ hẳn đi hay mở ra việc làm mới, như
+máy tự thanh toán ở siêu thị hay tổng đài tự động bắt khách bấm hết phím
+này đến phím khác. Người mất việc thì có, còn chiếc bánh chung chẳng to
+thêm là bao.</p>
+<p><strong>Bảo hiểm xã hội một lần.</strong> Khoản tiền người lao động
+nhận một lần khi rút khỏi hệ thống bảo hiểm xã hội, thay cho lương hưu
+hằng tháng về sau. Rút một lần thì có tiền ngay, nhưng mất thời gian
+đóng đã tích lũy để tính lương hưu.</p>
+<p><strong>Thu nhập cơ bản phổ quát</strong> (<em>universal basic
+income</em>). Khoản tiền như nhau nhà nước chuyển đều đặn cho mọi người
+dân, chẳng hỏi giàu nghèo. Phía ủng hộ nói phát đều thì chẳng ai lọt
+lưới; phía phản đối nói chia đều thì ai cũng chỉ nhận một khoản mỏng,
+còn dồn chừng ấy cho người nghèo thật sẽ đỡ được họ nhiều hơn.</p>
+<p><strong>Phi lý có quy luật.</strong> Con người lệch khỏi hình mẫu duy
+lý theo những thiên lệch có hệ thống, đoán trước được, như sợ mất hơn
+ham được, bị neo vào con số đầu tiên, theo mặc định, chạy theo đám
+đông.</p>
+<p><strong>Sợ mất.</strong> Nỗi đau khi mất một khoản thường nặng hơn
+hẳn niềm vui khi được đúng khoản ấy, trung bình các nghiên cứu ước chừng
+2 lần nhưng dao động rộng, nên người ta hay níu giữ những thứ lẽ ra nên
+buông.</p>
+<p><strong>Hiệu ứng sở hữu.</strong> Ta định giá một món đồ cao hơn chỉ
+vì nó đã là của mình, như người rao bán chiếc xe máy cũ luôn thấy nó
+đáng giá hơn con số người mua trả.</p>
+<p><strong>Neo.</strong> Con số đầu tiên lọt vào mắt hay vào tai kéo
+lệch mọi phán đoán sau đó, như tấm biển “giá gốc” gạch đỏ làm món hàng
+trông rẻ.</p>
+<p><strong>Thiên lệch hiện tại.</strong> Thói coi trọng hôm nay hơn ngày
+mai tới mức về sau chính mình phải tiếc, như mua thẻ tập cả tháng mà chỉ
+đến vài buổi, hay mở nhiều khoản trả sau cùng lúc.</p>
+<p><strong>Mua trước trả sau.</strong> Hình thức cho người mua nhận hàng
+ngay rồi trả tiền thành nhiều kỳ nhỏ về sau, qua ví trả sau hay ứng dụng
+của các công ty tài chính.</p>
+<p><strong>Lựa chọn mặc định.</strong> Phương án tự động được áp dụng
+nếu người ta không làm gì. Vì con người ngại thay đổi, mặc định đặt thế
+nào thì phần đông sẽ theo thế ấy, như tỷ lệ đồng ý hiến tạng ở Áo so với
+Đức.</p>
+<p><strong>Cú huých.</strong> Cách sắp đặt môi trường lựa chọn để nhẹ
+nhàng đẩy người ta về phía tốt hơn mà không cấm đoán, như đặt mặc định
+tham gia quỹ hưu trí. Cú huých là con dao hai lưỡi, vì cũng có thể bị
+dùng để thao túng.</p>
+<p><strong>Khủng hoảng tái lập.</strong> Đợt các nhà nghiên cứu làm lại
+những thử nghiệm nổi tiếng trên mẫu lớn theo kế hoạch công bố trước, rồi
+thấy nhiều hiệu ứng nhỏ hơn bản gốc hoặc không lặp lại được.</p>
+<p><strong>Giao dịch gây ghê tởm.</strong> Khái niệm của Roth: những
+giao dịch mà hai bên đều muốn nhưng người ngoài cuộc thấy không thể chấp
+nhận, như mua bán nội tạng hay phiếu bầu.</p>
+<p><strong>Hiệu ứng lấn át.</strong> Khi gắn tiền vào một việc người ta
+vốn làm vì lòng tốt, tự trọng hay tình làng nghĩa xóm, đồng tiền có thể
+đẩy những động lực ấy ra ngoài thay vì cộng thêm vào, như Titmuss lo
+rằng trả tiền cho việc hiến máu có thể làm vơi đi những người hiến vì
+lòng tốt.</p>
+</details>
+  </section>
   <section id="may-tinh">
     <h2>Máy tính nhỏ</h2>
     <p>Nhập số của nhà bạn. Mọi phép tính chạy ngay trên máy bạn, không gửi đi đâu.</p>
